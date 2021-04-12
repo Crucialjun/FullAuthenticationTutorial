@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "771921079479",
+    "project_id": "full-authentication-tutorial",
+    "storage_bucket": "full-authentication-tutorial.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771921079479:android:3f85c55a8fbdaf1907b132",
+        "android_client_info": {
+          "package_name": "com.crucialtech.fullauthenticationtutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771921079479-srtrplajbm56f9ikj3mqhs2ml85gc05b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALRJpPYZtvpMQqIFDCRXNCaEku8jUTJd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771921079479-srtrplajbm56f9ikj3mqhs2ml85gc05b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
