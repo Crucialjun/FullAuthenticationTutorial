@@ -3,18 +3,22 @@ package com.crucialtech.fullauthenticationtutorial
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentPagerAdapter
-import androidx.viewpager.widget.ViewPager
+import com.crucialtech.fullauthenticationtutorial.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayout
 
-class MainActivity() : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
+    private lateinit var binding : ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
 
 
-        val tabs = findViewById<TabLayout>(R.id.tabs)
-        val pager = findViewById<ViewPager>(R.id.pager)
+        val tabs = binding.tabs
+        val pager = binding.pager
         val adapter = PagerAdapter(supportFragmentManager
             ,FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
             ,tabs.tabCount
@@ -38,9 +42,9 @@ class MainActivity() : AppCompatActivity() {
 
         })
 
-//        pager.addOnPageChangeListener(object : TabLayout.TabLayoutOnPageChangeListener(tabs) {
-//
-//        })
+        pager.addOnPageChangeListener(object : TabLayout.TabLayoutOnPageChangeListener(tabs) {
+
+        })
 
     }
 }
